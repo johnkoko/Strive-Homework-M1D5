@@ -91,13 +91,18 @@ function check3and7(d) {
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 writeHeader("EXERCISE 7")
-/* WRITE YOUR ANSWER HERE */
-
+function reverseString(str) {
+    return str.split("").reverse("").join("");
+}
+    console.log(reverseString("Strive"));
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 writeHeader("EXERCISE 8")
-/* WRITE YOUR ANSWER HERE */
+function upperFirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+  console.log(upperFirst("superman"));
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
