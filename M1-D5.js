@@ -41,14 +41,26 @@ console.log(crazySum(2, 2));
  It should return triple their absolute difference if the given number is greater than 19.
 */
 writeHeader("EXERCISE 3")
-/* WRITE YOUR ANSWER HERE */
-
+function crazyDiff(c) {
+    if (c > 19) {
+      return Math.abs(c - 19) * 3;
+    } else {
+      return Math.abs(c - 19);
+    }
+  }
+  console.log(crazyDiff(3))
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 writeHeader("EXERCISE 4")
-/* WRITE YOUR ANSWER HERE */
-
+function boundary(n) {
+    if ((n > 20 && n <= 100) || n === 400) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  console.log(boundary(101));
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
