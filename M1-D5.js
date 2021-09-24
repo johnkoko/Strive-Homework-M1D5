@@ -108,13 +108,23 @@ function upperFirst(str) {
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 writeHeader("EXERCISE 9")
-/* WRITE YOUR ANSWER HERE */
+function cutString(str) {
+    return str.slice(1, str.length - 1);
+  }
+  console.log(cutString("peterpan"));
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 writeHeader("EXERCISE 10")
-/* WRITE YOUR ANSWER HERE */
+function giveMeRandom(n) {
+    const arr = [];
+    for (let i = 0; i <= n; i++) {
+      arr.push(Math.floor(Math.random() * 10));
+    }
+    return arr;
+  }
+  console.log(giveMeRandom(7));
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
